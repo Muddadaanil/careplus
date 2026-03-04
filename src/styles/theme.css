@@ -1,0 +1,139 @@
+:root {
+  --primary-blue: #0d6efd;
+  --deep-blue: #0f4c81;
+  --soft-blue: #eaf4ff;
+  --health-green: #1ca36f;
+  --ink: #12304a;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-navbar {
+  background: linear-gradient(90deg, var(--deep-blue), #1b6ca9);
+}
+
+.site-navbar .navbar-brand,
+.site-navbar .nav-link {
+  color: #fff;
+}
+
+.site-navbar .nav-link.active,
+.site-navbar .nav-link:hover {
+  color: #d9f2ff;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -7px;
+  right: -8px;
+  font-size: 0.65rem;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #0e5f98, #2498b5);
+}
+
+.hero-panel {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+.service-card {
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: var(--health-green);
+}
+
+.medicine-card {
+  transition: transform 0.2s ease;
+}
+
+.medicine-card:hover {
+  transform: translateY(-4px);
+}
+
+.medicine-image {
+  height: 180px;
+  object-fit: cover;
+}
+
+.about-section {
+  background-color: var(--soft-blue);
+}
+
+.contact-box {
+  background-color: #ffffff;
+  border: 1px solid #d6e7f8;
+}
+
+.site-footer {
+  background-color: #0b2f4a;
+  color: #d9e9f5;
+}
+
+.footer-links a {
+  color: #cbe6ff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.admin-sidebar {
+  position: sticky;
+  top: 92px;
+}
+
+.admin-nav-link {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  color: var(--ink);
+  background-color: #f6fbff;
+  border: 1px solid #ddefff;
+  font-weight: 500;
+}
+
+.admin-nav-link:hover {
+  background-color: #eaf4ff;
+  color: var(--deep-blue);
+}
+
+.admin-nav-link.active {
+  background-color: var(--deep-blue);
+  color: #fff;
+  border-color: var(--deep-blue);
+}
+
+.admin-dashboard-head {
+  background: linear-gradient(135deg, #f3f9ff, #e8f4ff);
+  border: 1px solid #d8eafd;
+}
+
+.admin-metric-card {
+  border-top: 4px solid #d5e8fb;
+}
+
+@media (max-width: 767px) {
+  .hero-section .display-5 {
+    font-size: 2rem;
+  }
+
+  .admin-sidebar {
+    position: static;
+  }
+}
